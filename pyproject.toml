@@ -1,0 +1,26 @@
+[project]
+name = "cydbg"
+version = "0.1.0"
+description = "cython wrapper of C++ debugging example"
+authors = [
+    {name = "mon", email = "fake@email.com"},
+]
+dependencies = [
+    "numpy>=1.26.4",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+build = [
+    "cython>=3.0.10",
+    "setuptools>=69.5.1",
+]
+
+[tool.pdm.scripts]
+compile = "python setup.py build_ext"
