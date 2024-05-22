@@ -24,3 +24,4 @@ build = [
 
 [tool.pdm.scripts]
 compile = "python setup.py build_ext"
+main = "python src/main.py"
